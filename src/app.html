@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+	<style>
+		:root {
+			--color-gray-100: rgb(220, 220, 220);
+			--color-gray-200: rgb(180, 180, 180);
+
+			--font-size-sm: 0.8rem;
+			--font-size-md: 1rem;
+			--font-size-lg: 1.2rem;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--color-text: rgb(180, 180, 180);
+				--color-background: rgb(0, 0, 0);
+			}
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background: var(--color-background);
+			color: var(--color-text);
+		}
+
+		a,
+		a:visited {
+			color: var(--color-text);
+		}
+	</style>
+</html>
